@@ -4,8 +4,10 @@
   "description": "demo about uploading images to the cloud ",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "ts-node src/index.ts",
+    "build": "tsc",
+    "serve": "node dist/index.js",
+    "postbuild": "chmod +x bin/postbuild.sh && ./bin/postbuild.sh"
   },
   "author": "Evans",
   "license": "ISC",
@@ -18,5 +20,11 @@
     "multer-storage-cloudinary": "^4.0.0",
     "nodemon": "^3.1.3",
     "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
   }
 }
