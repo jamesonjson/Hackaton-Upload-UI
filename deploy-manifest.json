@@ -25,6 +25,17 @@
             }
         },
         {
+            "path": "/views/*.*",
+            "target": {
+              "kind": "Static",
+              "cacheControl": "public, max-age=2"
+            },
+            "fallback": {
+              "kind": "Compute",
+              "src": "default/views/*.*"
+            }
+        },
+        {
             "path": "/*",
             "target": {
                 "kind": "Compute",
