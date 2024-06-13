@@ -25,7 +25,7 @@
             }
         },
         {
-            "path": "/views/*.*",
+            "path": "/*.*",
             "target": {
               "kind": "Static",
               "cacheControl": "public, max-age=2"
