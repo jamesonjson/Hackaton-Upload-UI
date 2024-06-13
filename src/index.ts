@@ -7,14 +7,13 @@ const app: express.Application = express();
 const port = 3000;
 
 app.use(express.text());
-app.set("views", path.join(__dirname, "./views"));
+app.set("views", path.join(__dirname, "../static/views"));
 app.set("view engine", "ejs");
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
-app.use(
-  express.static(path.join(__dirname, "public"), { maxAge: 31557600000 })
-);
+app.use('/static', express.static(path.join(__dirname, 'static')))
+
 app.listen(port, () => {
   console.log(`server is listening on ${port}`);
 });
