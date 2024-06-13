@@ -32,7 +32,7 @@
             },
             "fallback": {
               "kind": "Compute",
-              "src": "default/views/*.*"
+              "src": "default"
             }
         },
         {
