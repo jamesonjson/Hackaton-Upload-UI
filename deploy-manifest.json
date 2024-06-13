@@ -21,7 +21,7 @@
             }
         },
         {
-            "path": "/public/*",
+            "path": "/*.*",
             "target": {
               "kind": "Static",
               "cacheControl": "public, max-age=2"
