@@ -21,7 +21,8 @@ app.listen(port, () => {
 
 
 app.get("", (req: express.Request, res: express.Response) => {
-  res.render("home");
+  //res.render("home");
+  res.status(200).send("Hello World!");
 });
 
 // GET
