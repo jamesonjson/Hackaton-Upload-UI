@@ -21,7 +21,7 @@ app.listen(port, () => {
 
 
 app.get("", (req: express.Request, res: express.Response) => {
-  res.render("home.ejs");
+  res.render("home");
 });
 
 // GET

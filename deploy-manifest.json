@@ -24,7 +24,6 @@
                 "cacheControl": "public, max-age=3600, immutable"
             }
         },
-        
         {
             "path": "/*",
             "target": {
